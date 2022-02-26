@@ -14,6 +14,8 @@
   "platforms": {
     "ios": "9.0"
   },
+  "static_framework": true,
+  "requires_arc": true,
   "dependencies": {
     "TXIMSDK_Plus_iOS": [
 
@@ -23,7 +25,7 @@
     {
       "name": "IM",
       "source_files": "MySDK/Classes/IM/**/*",
-      "public_header_files": "SugerKit/Classes/IM/IMManager.h",
+      "public_header_files": "MySDK/Classes/IM/IMManager.h",
       "frameworks": "Foundation"
     },
     {

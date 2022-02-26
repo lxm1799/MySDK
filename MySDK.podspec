@@ -30,6 +30,13 @@ TODO: 私人SDK封装
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   #支持的平台系统
   s.ios.deployment_target = '9.0'
+  
+  # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
+   s.static_framework  =  true
+   # arc和mrc选项
+   s.requires_arc = true
+   # 链接设置 重要
+   # s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
     
   #依赖的第三方库
   s.dependency 'TXIMSDK_Plus_iOS'
@@ -49,7 +56,7 @@ TODO: 私人SDK封装
   # Foundation
   s.subspec 'IM' do |ss|
       ss.source_files = 'MySDK/Classes/IM/**/*'
-      ss.public_header_files = 'SugerKit/Classes/IM/IMManager.h'
+      ss.public_header_files = 'MySDK/Classes/IM/IMManager.h'
       ss.frameworks = 'Foundation'
 #      ss.dependency = 'TXIMSDK_Plus_iOS'
   end

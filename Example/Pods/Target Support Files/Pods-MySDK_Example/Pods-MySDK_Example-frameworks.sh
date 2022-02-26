@@ -176,11 +176,9 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MySDK/MySDK.framework"
   install_framework "${PODS_ROOT}/TXIMSDK_Plus_iOS/ImSDK_Plus.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MySDK/MySDK.framework"
   install_framework "${PODS_ROOT}/TXIMSDK_Plus_iOS/ImSDK_Plus.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
