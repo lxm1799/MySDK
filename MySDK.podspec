@@ -24,7 +24,7 @@ TODO: 私人SDK封装
   s.homepage         = 'https://github.com/lxm1799/MySDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.author           = { 'lxm1799' => 'goodlucky1130@163.com' }
-#  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   
   s.source           = { :git => 'https://github.com/lxm1799/MySDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
@@ -58,7 +58,6 @@ TODO: 私人SDK封装
       ss.source_files = 'MySDK/Classes/IM/**/*'
       ss.public_header_files = 'MySDK/Classes/IM/IMManager.h'
       ss.frameworks = 'Foundation'
-#      ss.dependency = 'TXIMSDK_Plus_iOS'
   end
   
   

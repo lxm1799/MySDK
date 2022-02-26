@@ -7,6 +7,10 @@
   "authors": {
     "lxm1799": "goodlucky1130@163.com"
   },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "source": {
     "git": "https://github.com/lxm1799/MySDK.git",
     "tag": "0.1.0"
