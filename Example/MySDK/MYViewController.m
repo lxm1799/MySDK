@@ -7,6 +7,8 @@
 //
 
 #import "MYViewController.h"
+#import "IMManager.h"
+#import "MyObject.h"
 
 @interface MYViewController ()
 
@@ -17,7 +19,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    IMManager *manager = [IMManager new];
+    NSInteger aaa = [manager getLoginStatus];
+    [manager print];
+    
+    NSLog(@"aaa == %ld",aaa);
+    
+    
+    MyObject *obj = [MyObject new];
+    [obj print];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

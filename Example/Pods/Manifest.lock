@@ -1,0 +1,29 @@
+PODS:
+  - MySDK (0.1.0):
+    - MySDK/IM (= 0.1.0)
+    - MySDK/Other (= 0.1.0)
+    - TXIMSDK_Plus_iOS
+  - MySDK/IM (0.1.0):
+    - TXIMSDK_Plus_iOS
+  - MySDK/Other (0.1.0):
+    - TXIMSDK_Plus_iOS
+  - TXIMSDK_Plus_iOS (6.0.1992)
+
+DEPENDENCIES:
+  - MySDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - TXIMSDK_Plus_iOS
+
+EXTERNAL SOURCES:
+  MySDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MySDK: 5322de7355881da98a7ecc3fbf353db39202ed11
+  TXIMSDK_Plus_iOS: 483891ec5e5b4965918e995acf4bd430a4a3b12b
+
+PODFILE CHECKSUM: 3c486dcc5d5c1cc05f21b04f1bda66019c904af5
+
+COCOAPODS: 1.11.0

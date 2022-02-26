@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MySDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MySDK.'
+  s.summary          = '私人SDK封装'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,55 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: 私人SDK封装
                        DESC
 
   s.homepage         = 'https://github.com/lxm1799/MySDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lxm1799' => 'richardming@muchenglin.com' }
+  s.author           = { 'lxm1799' => 'goodlucky1130@163.com' }
+#  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  
   s.source           = { :git => 'https://github.com/lxm1799/MySDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  #支持的平台系统
   s.ios.deployment_target = '9.0'
+    
+  #依赖的第三方库
+  s.dependency 'TXIMSDK_Plus_iOS'
 
-  s.source_files = 'MySDK/Classes/**/*'
+  # 表示依赖系统的框架(多个)
+#  s.frameworks = 'Foundation'
   
+  
+#  #你的源码位置
+#  s.source_files = 'MySDK/Classes/**/*'
+#
+#  #需要对外开放的头文件
+#  s.public_header_files = 'MySDK/Classes'
+  
+
+  
+  # Foundation
+  s.subspec 'IM' do |ss|
+      ss.source_files = 'MySDK/Classes/IM/**/*'
+      ss.public_header_files = 'SugerKit/Classes/IM/IMManager.h'
+      ss.frameworks = 'Foundation'
+#      ss.dependency = 'TXIMSDK_Plus_iOS'
+  end
+  
+  
+  s.subspec 'Other' do |ss|
+      ss.source_files = 'MySDK/Classes/Other/**/*'
+      ss.public_header_files = 'MySDK/Classes/Other/MyObject.h'
+      ss.frameworks = 'Foundation'
+  end
+  
+  
+  
+  # 资源，比如图片，音频文件等
   # s.resource_bundles = {
   #   'MySDK' => ['MySDK/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
