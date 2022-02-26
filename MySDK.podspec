@@ -75,5 +75,5 @@ TODO: 私人SDK封装
   #   'MySDK' => ['MySDK/Assets/*.png']
   # }
 
-   s.public_header_files = 'Pod/Classes/IM/**/*.h'
+   s.public_header_files = 'Pod/Classes/IM/IMManager.h'
 end

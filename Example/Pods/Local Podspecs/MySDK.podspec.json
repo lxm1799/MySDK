@@ -21,7 +21,7 @@
 
     ]
   },
-  "public_header_files": "Pod/Classes/IM/**/*.h",
+  "public_header_files": "Pod/Classes/IM/IMManager.h",
   "subspecs": [
     {
       "name": "IM",
